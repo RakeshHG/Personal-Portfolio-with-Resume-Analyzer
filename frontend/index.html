@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Intelligent Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume-analyzer">Resume Analyzer</a></li>
+                <li><a href="#job-matches">Job Matches</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Your Profile Picture" class="profile-image">
+            <p>A brief introduction about yourself, your background, and your career aspirations.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+                <a href="https://leetcode.com/yourleetcode" target="_blank">LeetCode</a>
+                <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
+                </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">Python</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">SQL</div>
+                </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project Title 1</h3>
+                    <img src="images/project1.png" alt="Project 1 Image">
+                    <p>Brief description of the project and your role.</p>
+                    <p>Technologies used: HTML, CSS, JavaScript</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Live Demo</a>
+                        <a href="https://github.com/yourrepo/project1" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="resume-analyzer">
+            <h2>Resume Analyzer</h2>
+            <p>Upload your resume to get an analysis and suggestions for improvement.</p>
+            <input type="file" id="resume-input" accept=".pdf">
+            <button id="analyze-button">Analyze Resume</button>
+            <div id="resume-analysis"></div>
+        </section>
+
+        <section id="job-matches">
+            <h2>Job Matches</h2>
+            <p>Based on your analyzed resume, here are some relevant job openings.</p>
+            <div id="job-list"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out!</p>
+            <p>Email: your.email@example.com</p>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+    <script src="js/script.js"></script>
+    </body>
+</html>
