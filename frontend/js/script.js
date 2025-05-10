@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.append('resume', file);
 
         try {
-            const response = await fetch('/analyze_resume', {
-                method: 'POST',
-                body: formData,
+            const response = await fetch('http://127.0.0.1:5000/analyze_resume', {
+            method: 'POST',
+            body: formData
             });
 
             if (!response.ok) {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchAndDisplayJobs() {
         try {
-            const response = await fetch('/scrape_and_match');
+            const response = await fetch('http://127.0.0.1:5000/scrape_and_match');
             if (!response.ok) {
                 throw new Error('Failed to fetch job matches');
             }

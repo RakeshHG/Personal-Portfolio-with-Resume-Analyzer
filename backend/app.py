@@ -1,11 +1,18 @@
 # backend/app.py
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
-from backend.utils import extract_text_from_pdf
-from backend.resume_analyzer import initialize_gemini, analyze_resume
-from backend.job_scraper import scrape_jobs
-from backend.job_matcher import match_resume_to_jobs
-from backend.config import GEMINI_API_KEY, JOB_PORTAL_URLS
+
+from .utils import extract_text_from_pdf
+from .resume_analyzer import initialize_gemini, analyze_resume
+from .job_scraper import scrape_jobs
+from .job_matcher import match_resume_to_jobs
+from .config import GEMINI_API_KEY, JOB_PORTAL_URLS
+
+# from backend.utils import extract_text_from_pdf
+# from backend.resume_analyzer import initialize_gemini, analyze_resume
+# from backend.job_scraper import scrape_jobs
+# from backend.job_matcher import match_resume_to_jobs
+# from backend.config import GEMINI_API_KEY, JOB_PORTAL_URLS
 import os
 import json
 
